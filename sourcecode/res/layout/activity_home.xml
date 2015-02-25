@@ -1,0 +1,183 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+ 	
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="879dp"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Latitude: " />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknown" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:text="username" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:text="Longitute: " />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="unknown" >
+            </TextView>
+        </LinearLayout>
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:layout_marginTop="32dp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editJenisKejahatan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/map"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Jenis Kejahatan"
+            android:inputType="textAutoComplete" >
+
+            <requestFocus />
+        </AutoCompleteTextView>
+
+        <EditText
+            android:id="@+id/editNomor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editJenisKejahatan"
+            android:layout_marginTop="20dp"
+            android:hint="Nomor Kantor Polisi"
+            android:ems="10"
+            android:inputType="phone" />
+        
+        <TextView 
+            android:id="@+id/textNomor"
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/editNomor"
+            android:text="Kantor Pusat : 085772155253" />
+
+        <EditText
+            android:id="@+id/editEmailPolisi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textNomor"
+            android:layout_marginTop="20dp"
+            android:hint="Email Kantor Polisi"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        
+        <TextView 
+            android:id="@+id/textEmail"
+        	android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/editEmailPolisi"
+            android:text="Kantor Pusat : jalilalvino@gmail.com" />
+
+        <ImageView
+            android:id="@+id/buttonFoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/editKronologi"
+            android:layout_marginRight="28dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/camera" />
+
+        <ImageView
+            android:id="@+id/buttonAttachment"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editKronologi"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/folder" />
+
+        <Button
+            android:id="@+id/buttonKirim"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_alignLeft="@+id/buttonAttachment"
+            android:layout_alignRight="@+id/buttonFoto"
+            android:layout_below="@+id/imageViewHasil"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/flat_selector"
+            android:text="Kirim"
+            android:textColor="@android:color/white" />
+
+        <EditText
+            android:id="@+id/editKronologi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textEmail"
+            android:hint="Kronologi Kejahatan"
+            android:lines="3"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <ImageView
+            android:id="@+id/imageViewHasil"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/buttonAttachment" />
+
+    </RelativeLayout>
+ 
+</ScrollView>

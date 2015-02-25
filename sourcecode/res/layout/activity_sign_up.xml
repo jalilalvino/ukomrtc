@@ -1,0 +1,177 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="671dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/signup"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="42dp"
+        android:text="@string/username" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textUsername"
+        android:ems="15"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editUsername"
+        android:layout_below="@+id/editUsername"
+        android:layout_marginTop="20dp"
+        android:text="@string/nama" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editUsername"
+        android:layout_below="@+id/textNama"
+        android:ems="15"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNama"
+        android:layout_below="@+id/editNama"
+        android:layout_marginTop="20dp"
+        android:text="@string/alamat" />
+
+    <EditText
+        android:id="@+id/editAlamat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editNama"
+        android:layout_below="@+id/textAlamat"
+        android:ems="15"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textKTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAlamat"
+        android:layout_below="@+id/editAlamat"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_ktp" />
+
+    <EditText
+        android:id="@+id/editKTP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAlamat"
+        android:layout_below="@+id/textKTP"
+        android:ems="15"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editKTP"
+        android:layout_marginTop="20dp"
+        android:text="@string/no_hp" />
+
+    <EditText
+        android:id="@+id/editHP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textHP"
+        android:ems="15"
+        android:inputType="number" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/textEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editHP"
+        android:layout_marginTop="20dp"
+        android:text="@string/email" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textEmail"
+        android:ems="15"
+        android:inputType="textEmailAddress" >
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editEmail"
+        android:layout_marginTop="20dp"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textPass"
+        android:ems="15"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnDaftar"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/btnKembali"
+        android:layout_alignBottom="@+id/btnKembali"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/flat_selector"
+        android:text="@string/save"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnKembali"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editPass"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/textEmail"
+        android:background="@drawable/flat_selector"
+        android:text="Cancel"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
+
+</ScrollView>
