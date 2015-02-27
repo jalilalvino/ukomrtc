@@ -14,10 +14,10 @@ untuk memudahkan dan mempercepat laporan. Laporan juga diharuskan menggunakan la
 User diberikan akses login, mendaftar, dan melaporkan kejahatan.
 
 <h3>Kredit</h3>
-Nama 		: Abdul Jalil Mahyudin
-Kelas 		: XII-RPL
-Sekolah 	: SMK NEGERI 10 JAKARTA
-Email 		: jalilalvino@gmail.com
-Facebook 	: www.facebook.com/JalilAlvino
-SMS/WA 		: 085772155253
-BBM			: 79F6570F
+*Nama 		: Abdul Jalil Mahyudin
+*Kelas 		: XII-RPL
+*Sekolah 	: SMK NEGERI 10 JAKARTA
+*Email 		: jalilalvino@gmail.com
+*Facebook 	: www.facebook.com/JalilAlvino
+*SMS/WA 	: 085772155253
+*BBM		: 79F6570F
